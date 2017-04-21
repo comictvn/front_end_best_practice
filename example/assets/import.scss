@@ -1,0 +1,162 @@
+//--------------------
+// #Defaults
+//--------------------
+
+@import '/Users/Admin/Desktop/Work/99999999 SITE ALL Design/Git/laclongquan/app/assets/stylesheets/base/symbols';
+@import '/Users/Admin/Desktop/Work/99999999 SITE ALL Design/Git/laclongquan/app/assets/stylesheets/override_hipvan/hipvan';
+
+@font-face {
+  font-family:'Sofia';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProSemiBold-0277d090ecf8ce6b58e497b2e6f1e387b9e42dfee96f1fb0530394872c269232.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProSemiBold-0277d090ecf8ce6b58e497b2e6f1e387b9e42dfee96f1fb0530394872c269232.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProSemiBold-0b088bf6b1631a46245e80b77dab039e650aa0de2d859f15d2f7eb11e03230c1.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProSemiBold-35fcbc00d559c14c480250d8378bebf8555838a6cbb7b13b321be7ffae624f5e.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProSemiBold-5a8860b8ea369dab263bcc808ed481484bd67086317e19f12d3dc518c38a7f55.svg#SofiaProSemiBold') format("svg");
+  font-style:normal;
+  font-weight:600;
+}
+
+@font-face {
+  font-family:'Sofia';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-2390404a134f481b46d57ca447d5044a541ed163664fff424f8e546a2e210aa5.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-2390404a134f481b46d57ca447d5044a541ed163664fff424f8e546a2e210aa5.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-49c952157402d70598dc3cfdc558ec60516ab7e7ccbe1f432035bed3c5f2996b.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-a2938b3bd60147b153230b65325af87f19f02ce48d54d1cd3f23d9a52edf7efd.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-7dd830de0d488863ba082e855aed658a0159ab2583d93e0dd5870d97f2666e67.svg#SofiaProRegular') format("svg");
+  font-style:normal;
+  font-weight:400;
+}
+
+@font-face {
+  font-family:'Sofia';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-Italic-0206fc233a55c36d5fd7ebfde18da4ae689eb71947421e288a25c7763fa63a04.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-Italic-0206fc233a55c36d5fd7ebfde18da4ae689eb71947421e288a25c7763fa63a04.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-Italic-b43a9a60cd1abd47d06f6d57be26fa52b0ef11199aa01e167ba9899d69644a3b.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-Italic-3d1405bdaf13e6910cc4f72a75893c91e3d9958c5737e4f9f70349473e5c022c.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProRegular-Italic-1872d17a530566abe95913484417ef50d5eef41ab00252773d00df9d76e48ce9.svg#SofiaProRegular-Italic') format("svg");
+  font-style:italic;
+  font-weight:400;
+}
+
+@font-face {
+  font-family:'Sofia';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-450a059859ae1e7073e4b325f2ecceeffb01d50843bf8a7c866c196873e56c7f.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-450a059859ae1e7073e4b325f2ecceeffb01d50843bf8a7c866c196873e56c7f.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-6eee9fdf7aeb8004a80e0b4fd74594ad5c617d8acf41d141034d94bf2529be5d.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-fa9478495b0087e985ebb0eda5f319e4eb537b5fe6dbc26a3e3a5b6d5d587527.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-a9441f3c979d7e8f09331ca488d64a3320bea71946ef3c67c97e8ca2e8e56c9b.svg#SofiaProExtraLight') format("svg");
+  font-style:normal;
+  font-weight:200;
+}
+
+@font-face {
+  font-family:'Sofia';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-Italic-e428e73cde3bd481370a253993db5b6b04d817dc00172e81096fd3525fe2f431.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-Italic-e428e73cde3bd481370a253993db5b6b04d817dc00172e81096fd3525fe2f431.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-Italic-edf21099f177a31e022291a19306cc8b426a08b685ed0364c45f3a84d2332980.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-Italic-00a0a8026d7f52ac69df76466539917c0eab1aa000a5633d06647fef4414118d.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/SofiaProExtraLight-Italic-e7f8e9c17101c4232fb80c1ecae73459e03320c57d4a9472cc028816ed52e364.svg#SofiaProExtraLight-Italic') format("svg");
+  font-style:italic;
+  font-weight:200;
+}
+
+@font-face {
+  font-family:'HipVanSymbols-Regular';
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/HipVanSymbols-Regular-02599010724ef04089090623f1b1a0dfabc0d14e317b8d6517fe03ca9503ef9e.eot');
+  src:url('http://dfd5opm53tol5.cloudfront.net/assets/HipVanSymbols-Regular-02599010724ef04089090623f1b1a0dfabc0d14e317b8d6517fe03ca9503ef9e.eot?#iefix') format("embedded-opentype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/HipVanSymbols-Regular-4a6202ac427faf0344844e2cb20fd57eb6ba2f5ee61415e1329ec16607f3804c.woff') format("woff"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/HipVanSymbols-Regular-4ab055db54c2aa378101aaf2467295228309dcd98d1633ed29e447eb8be63f29.ttf') format("truetype"),
+      url('http://dfd5opm53tol5.cloudfront.net/assets/HipVanSymbols-Regular-989711717618054aad1a449df5eba360d9f8f5e6690e69e0094bd3b94754c279.svg#HipVanSymbols-Regular') format("svg");
+  font-style:normal;
+  font-weight:normal;
+}
+
+
+
+//--------------------
+// #Local Only
+//--------------------
+
+* {
+  box-sizing: border-box;
+  font-family: 'Sofia'; // DEBUG
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.c-input,
+.c-btn {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  border: 1px solid;
+  @include border-radius(2px);
+  cursor: pointer;
+  outline: none;
+  @include appearance-toggle;
+  @include transition(
+    background-color .2s ease,
+    color            .2s ease,
+    border-color     .2s ease
+  );
+
+  @each $size, $value in $tag-sizes {
+    &-#{$size} {
+      @include tag_size($size);
+    }
+  }
+}
+
+.c-input {
+  text-align: left;
+}
+
+.c-btn {
+  text-align: center;
+
+  &-primary,
+  &-secondary,
+  &-grey,
+  &-ghost {
+    color: $hexW;
+  }
+
+  &-ghost {
+    background-color: $hexW;
+    border-color: $hexW;
+  }
+
+  &-grey {
+    background-color: $hexFaded;
+    border-color: $hexFaded;
+  }
+
+  &-grey.c-btn-ghost {
+    color: $hexFaded;
+    background-color: transparent;
+  }
+  
+  &-primary {
+    background-color: $hexPrimary;
+    border-color: $hexPrimary;
+  }
+  
+  &-primary.c-btn-ghost {
+    color: $hexPrimary;
+    background-color: transparent;
+  }
+  
+  &-secondary {
+    background-color: $hexSecondary;
+    border-color: $hexSecondary;
+  }
+  
+  &-secondary.c-btn-ghost {
+    color: $hexSecondary;
+    background-color: transparent;
+  }
+}
