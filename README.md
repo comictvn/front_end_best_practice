@@ -33,7 +33,7 @@ Broadly speaking, there are 2 categories of namespaces.
 - **_Preset_** classes have pre-determined functions and should not have any additional properties attributed and/or bound to them.
   - Globally-applicable *by default*:
       - `o-`: Objects. Used for globally applicable elements and complex blocks. Should be purely structural with no aesthetic style properties (normalising properties are exception) Examples include `o-gridbox__list` and `o-swipe__list`
-      - `ic-`: Icons. Used to apply HipVan symbols (as a pseudo-element). All HipVan symbols should be applied from the predefined list of `ic-` prefixed classes @ [/symbols-reference](https://www.hipvan.com/symbols-reference).
+      - `ic-`: Icons. Used to apply HipVan symbols (as a pseudo-element). All HipVan symbols should be applied from the predefined list of `ic-` prefixed classes @.
       - `u-`: Utility. Single-purpose class that applies important but isolated propert(ies) to an element
       - `hk-`: Hack. Write only into `../override_hipvan/shame.scss`. Used for single-purpose & isolated tricks, cheats, magic numbers, etc. Should be returned to and removed once a proper solution is found
 
