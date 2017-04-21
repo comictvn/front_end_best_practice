@@ -1,0 +1,264 @@
+//--------------------------------------------------
+// This file should only contain sorted mixins.
+// Please don't insert any CSS styles here because
+// this file is included in many other files
+//--------------------------------------------------
+
+
+
+//--------------------
+// #Colours
+//--------------------
+
+// Theme Palette
+$hexPrimary: #00bdb3;
+$hexSecondary: #ff4d5f;
+$hexBody: #464646;
+$hexFaded: #848484;
+$hexGreyMid: #ababab;
+$hexGreyLight: #dddddd;
+$hexBg: #fafafa;
+
+// Black & White
+$hexW: #ffffff;
+$hexB: #000000;
+
+// Channels
+$hexFacebook: #556fac;
+$hexTwitter: #78cbef;
+$hexPinterest: #eb5755;
+$hexWhatsapp: #55c133;
+$hexInstagram: #696969;
+$hexEmail: #aaaaaa;
+
+// UI Messages
+$hexSuccess: #60a917;
+$hexNotice: #39a5ef;
+$hexWarning: #eab700;
+$hexError: #d44950;
+
+
+
+//--------------------
+// #Dimensions
+//--------------------
+
+$sizeFont: 14px !default;
+$sizeFont_em: 1em !default;
+
+$widthContent: 1200px;
+$widthMax: 1500px;
+$widthScrollbar: 15px;
+
+$widthContentPad: 20px;
+$widthContentPad_m: 3vw;
+
+$heightMenu: 55px;
+$heightMenu_m: 14vw;
+
+$widthGutter: 20px;
+$widthGutter_m: 3vw;
+$widthElementPad: 10px;
+$widthElementPad_m: 2vw;
+
+$tag-sizes: (
+    xs: 1,
+     s: 2,
+     m: 3,
+     l: 4,
+    xl: 5,
+);
+
+
+
+//--------------------
+// #Scales
+//--------------------
+
+$minor-second:     1.067;
+$major-second:     1.125;
+$minor-third:      1.2;
+$major-third:      1.25;
+$perfect-fourth:   1.333;
+$augmented-fourth: 1.414;
+$perfect-fifth:    1.5;
+$minor-sixth:      1.6;
+$golden:           1.618;
+$major-sixth:      1.667;
+$minor-seventh:    1.778;
+$major-seventh:    1.875;
+$octave:           2;
+$major-tenth:      2.5;
+$major-eleventh:   2.667;
+$major-twelfth:    3;
+$double-octave:    4;
+
+
+
+//--------------------
+// #Symbols
+//--------------------
+
+$symbols: (
+  e300: 'ic-blog-post.ic-bold',
+  e310: 'ic-blog-post',
+  e301: 'ic-blog-pros.ic-bold',
+  e311: 'ic-blog-pros',
+  e302: 'ic-blog-tips.ic-bold',
+  e312: 'ic-blog-tips',
+  e221: 'ic-cats-2ssofas',
+  e220: 'ic-cats-armchairs',
+  e241: 'ic-cats-bath',
+  e22b: 'ic-cats-bedding',
+  e229: 'ic-cats-bedframes',
+  e227: 'ic-cats-beds',
+  e22c: 'ic-cats-bedsidetables',
+  e226: 'ic-cats-benches',
+  e243: 'ic-cats-bookcases',
+  e246: 'ic-cats-clocks',
+  e247: 'ic-cats-clothestands',
+  e222: 'ic-cats-coffeetables',
+  e245: 'ic-cats-cushions',
+  e22f: 'ic-cats-decor',
+  e225: 'ic-cats-diningchairs',
+  e224: 'ic-cats-diningtables',
+  e22d: 'ic-cats-drawers',
+  e242: 'ic-cats-improvement',
+  e240: 'ic-cats-kitchen',
+  e22e: 'ic-cats-lighting',
+  e22a: 'ic-cats-mattresses',
+  e244: 'ic-cats-mirrors',
+  e248: 'ic-cats-outdoorchairs',
+  e24b: 'ic-cats-pouffes',
+  e24a: 'ic-cats-rugsmats',
+  e223: 'ic-cats-sideboards',
+  e228: 'ic-cats-sofabeds',
+  e249: 'ic-cats-stools',
+  e201: 'ic-catx-preloved',
+  e200: 'ic-catx-sale',
+  e003: 'ic-logo-android.ic-solid',
+  e013: 'ic-logo-android',
+  e002: 'ic-logo-ios.ic-solid',
+  e012: 'ic-logo-ios',
+  e000: 'ic-logo-type',
+  e001: 'ic-logo-van.ic-solid',
+  e011: 'ic-logo-van',
+  e402: 'ic-misc-bulk.ic-bold',
+  e412: 'ic-misc-bulk',
+  e404: 'ic-misc-cards.ic-bold',
+  e414: 'ic-misc-cards',
+  e403: 'ic-misc-contracts.ic-bold',
+  e413: 'ic-misc-contracts',
+  e41d: 'ic-misc-design',
+  e41b: 'ic-misc-ecommerce',
+  e435: 'ic-misc-location',
+  e436: 'ic-misc-newsletter',
+  e421: 'ic-misc-price.ic-bold',
+  e431: 'ic-misc-price',
+  e405: 'ic-misc-protect.ic-bold',
+  e415: 'ic-misc-protect',
+  e41a: 'ic-misc-quality',
+  e401: 'ic-misc-returns.ic-bold',
+  e411: 'ic-misc-returns',
+  e432: 'ic-misc-reviews',
+  e41f: 'ic-misc-service',
+  e430: 'ic-misc-setup',
+  e409: 'ic-misc-ship.ic-bold.ic-ship-fsfr',
+  e407: 'ic-misc-ship.ic-bold.ic-ship-free',
+  e408: 'ic-misc-ship.ic-bold.ic-ship-fast',
+  e406: 'ic-misc-ship.ic-bold',
+  e419: 'ic-misc-ship.ic-ship-fsfr',
+  e417: 'ic-misc-ship.ic-ship-free',
+  e418: 'ic-misc-ship.ic-ship-fast',
+  e416: 'ic-misc-ship',
+  e41e: 'ic-misc-technology',
+  e41c: 'ic-misc-tradretail',
+  e433: 'ic-misc-tryout',
+  e410: 'ic-misc-variety',
+  e434: 'ic-misc-warranty',
+  e107: 'ic-site-arrow.ic-dir-up',
+  e109: 'ic-site-arrow.ic-dir-right2',
+  e105: 'ic-site-arrow.ic-dir-right',
+  e108: 'ic-site-arrow.ic-dir-left2',
+  e104: 'ic-site-arrow.ic-dir-left',
+  e106: 'ic-site-arrow.ic-dir-down',
+  e121: 'ic-site-cart.ic-bold',
+  e131: 'ic-site-cart',
+  e129: 'ic-site-categories.ic-bold',
+  e139: 'ic-site-categories',
+  e10d: 'ic-site-controls',
+  e12b: 'ic-site-credits.ic-bold',
+  e13b: 'ic-site-credits',
+  e101: 'ic-site-cross',
+  e153: 'ic-site-download.ic-bold',
+  e163: 'ic-site-download',
+  e152: 'ic-site-extlink.ic-bold',
+  e162: 'ic-site-extlink',
+  e047: 'ic-site-fbmsgr.ic-solid',
+  e027: 'ic-site-fbmsgr.ic-bold',
+  e037: 'ic-site-fbmsgr',
+  e10c: 'ic-site-filter',
+  e146: 'ic-site-heart.ic-solid',
+  e126: 'ic-site-heart.ic-bold',
+  e136: 'ic-site-heart',
+  e12a: 'ic-site-info.ic-bold',
+  e13a: 'ic-site-info',
+  e124: 'ic-site-logout.ic-bold',
+  e134: 'ic-site-logout',
+  e155: 'ic-site-magnify.ic-bold.ic-zoom-out',
+  e154: 'ic-site-magnify.ic-bold.ic-zoom-in',
+  e165: 'ic-site-magnify.ic-zoom-out',
+  e164: 'ic-site-magnify.ic-zoom-in',
+  e103: 'ic-site-minus',
+  e170: 'ic-site-permalink.ic-solid',
+  e150: 'ic-site-permalink.ic-bold',
+  e160: 'ic-site-permalink',
+  e102: 'ic-site-plus',
+  e151: 'ic-site-print.ic-bold',
+  e161: 'ic-site-print',
+  e12c: 'ic-site-referral.ic-bold',
+  e13c: 'ic-site-referral',
+  e120: 'ic-site-search.ic-bold',
+  e130: 'ic-site-search',
+  e10a: 'ic-site-selector',
+  e123: 'ic-site-settings.ic-bold',
+  e133: 'ic-site-settings',
+  e10b: 'ic-site-sort',
+  e148: 'ic-site-star.ic-solid.ic-star-half',
+  e147: 'ic-site-star.ic-solid.ic-star-full',
+  e128: 'ic-site-star.ic-bold.ic-star-half',
+  e127: 'ic-site-star.ic-bold.ic-star-full',
+  e138: 'ic-site-star.ic-star-half',
+  e137: 'ic-site-star.ic-star-full',
+  e157: 'ic-site-stretch.ic-bold.ic-zoom-out',
+  e156: 'ic-site-stretch.ic-bold.ic-zoom-in',
+  e167: 'ic-site-stretch.ic-zoom-out',
+  e166: 'ic-site-stretch.ic-zoom-in',
+  e100: 'ic-site-tick',
+  e145: 'ic-site-user.ic-solid',
+  e125: 'ic-site-user.ic-bold',
+  e135: 'ic-site-user',
+  e122: 'ic-site-wishlist.ic-bold',
+  e132: 'ic-site-wishlist',
+  e044: 'ic-socl-email.ic-solid',
+  e024: 'ic-socl-email.ic-bold',
+  e034: 'ic-socl-email',
+  e040: 'ic-socl-facebook.ic-solid',
+  e020: 'ic-socl-facebook.ic-bold',
+  e030: 'ic-socl-facebook',
+  e041: 'ic-socl-instagram.ic-solid',
+  e021: 'ic-socl-instagram.ic-bold',
+  e031: 'ic-socl-instagram',
+  e045: 'ic-socl-phone.ic-solid',
+  e025: 'ic-socl-phone.ic-bold',
+  e035: 'ic-socl-phone',
+  e042: 'ic-socl-pinterest.ic-solid',
+  e022: 'ic-socl-pinterest.ic-bold',
+  e032: 'ic-socl-pinterest',
+  e043: 'ic-socl-twitter.ic-solid',
+  e023: 'ic-socl-twitter.ic-bold',
+  e033: 'ic-socl-twitter',
+  e046: 'ic-socl-whatsapp.ic-solid',
+  e026: 'ic-socl-whatsapp.ic-bold',
+  e036: 'ic-socl-whatsapp'
+);
