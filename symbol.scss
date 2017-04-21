@@ -1,0 +1,17 @@
+@import 'variables';
+
+.ic-bef:before,
+.ic-aft:after {
+  font-family: 'HipVanSymbols-Regular', arial, sans-serif;
+}
+
+@function icon($character){
+    @return unquote("\'") + unquote(str-insert($character,"\\", 1)) + unquote("\'");
+}
+
+@each $utf, $labels in $symbols {
+  .ic-bef.#{$labels}:before,
+  .ic-aft.#{$labels}:after, {
+    content: icon($utf);
+  }
+}
