@@ -1,0 +1,206 @@
+@import 'variables';
+@import 'mixins';
+
+//--------------------
+// #Local Only
+//--------------------
+
+.segment {
+  width: 100%;
+  max-width: $widthContent;
+  color: $hexBody;
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  @include respond-to(mobile) {
+    padding: 5vw;
+  }
+}
+
+
+
+//--------------------
+// #Objects
+//--------------------
+
+
+
+//--------------------
+// #Symbols
+//--------------------
+
+ul[class^='c-symbols__list'] {
+  list-style-type: none;
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: top;
+}
+
+$labelSize: 30px;
+$labelPadding: 10px;
+
+.c-symbols__item {
+  color: $hexBody;
+  line-height: ($labelSize + $labelPadding * 2);
+  margin-bottom: 10px;
+  white-space: nowrap;
+
+  @include respond-to(mobile) {
+    line-height: $labelSize;
+    margin-bottom: 3vw;
+  }
+
+  ul[class$='-std'] & {
+    text-align: left;
+
+    &:before {
+      margin-right: 10px;
+    }
+  }
+
+  ul[class$='-alt'] & {
+    text-align: right;
+
+    &:after {
+      margin-left: 10px;
+    }
+  }
+}
+
+ul[class^='c-symbols__list--block'] {
+  .c-symbols__item {
+    font-size: $labelSize;
+    vertical-align: middle;
+    @include font-icon-auto(before, $labelSize, $labelPadding);
+    @include font-icon-auto(after, $labelSize, $labelPadding);
+
+    &:before, &:after {
+      background-color: $hexGreyLight;
+    }
+
+    @at-root {
+      .c-symbols__list--block-alt .c-symbols__item {
+        @include font-icon-auto(before, $labelSize, $labelPadding);
+      }
+    }
+  }
+}
+
+ul[class^='c-symbols__list--inline'] {
+  .c-symbols__item {
+    font-size: $labelSize;
+    @include font-icon-inline(before, $labelSize);
+
+    @at-root {
+      .c-symbols__list--inline-alt .c-symbols__item {
+        @include font-icon-inline(after, $labelSize);
+      }
+    }
+  }
+}
+
+
+
+//--------------------
+// #Gridbox and Swipe
+//--------------------
+
+.o-gridbox,
+.o-swipe {
+  &__img,
+  &__imgdiv {
+    display: block;
+    width: 100%;
+    font-size: 0;
+  }
+
+  &__imgdiv {
+    @include imgdiv;
+  }
+}
+
+.o-gridbox {
+  &__list-flex  { @include gridbox(o-gridbox__item, flex); }
+  &__list-block { @include gridbox(o-gridbox__item      ); }
+  
+  &__cols-5 { @include gridbox_grid-auto(o-gridbox__item, 5); }
+  
+  &__cols-3-shadows {
+    $gutterMultiplier: 4;
+
+    @include respond-to(mobile) {
+      @include gridbox_grid(o-gridbox__item, 2, ($widthGutter_m * $gutterMultiplier), ($widthGutter_m * $gutterMultiplier));
+    }
+
+    @include respond-to(notmobile) {
+      @include gridbox_grid(o-gridbox__item, 3, ($widthGutter * $gutterMultiplier), ($widthGutter * $gutterMultiplier));
+    }
+  }
+}
+
+.o-swipe {
+  &__list-flex  { @include swipebox(o-swipe__item, flex); }
+  &__list-block { @include swipebox(o-swipe__item      ); }
+
+  &__wrapper {
+    position: relative;
+    margin: 0 auto;
+
+    @media (min-width: 768px) and (max-width: #{$widthContent + $widthContentPad * 3 + $widthScrollbar}) {
+      max-width: #{$widthContent + $widthContentPad * 2};
+      margin-left: $widthContentPad * 1.5;
+      margin-right: $widthContentPad * 1.5;
+    }
+  }
+
+  &__cols-5h {
+    @include swipebox_grid-auto(o-swipe__item, 5.5);
+  }
+}
+
+.c-layouts__item {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 100%;
+    background-color: $hexBg;
+  }
+}
+
+.c-layouts__list2 .c-layouts__item {
+  @include flex_wrap(wrap);
+}
+
+.c-layouts__heading {
+  @include text_size(4, $minor-third);
+  font-weight: 400;
+  text-align: center;
+}
+
+.c-layouts__group {
+  width: 100%;
+  font-size: $sizeFont;
+}
+
+.c-layouts__label {
+  @include text_size(1);
+  padding: .5rem;
+  text-align: center;
+}
+
+
+
+//--------------------
+// #Box Shadows
+//--------------------
+
+@for $i from 0 through 9 {
+  .c-layouts__z#{$i} {
+    @include z-shadow($i);
+  }
+}
