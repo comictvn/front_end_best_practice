@@ -33,9 +33,9 @@ Broadly speaking, there are 2 categories of namespaces.
 - **_Preset_** classes have pre-determined functions and should not have any additional properties attributed and/or bound to them.
   - Globally-applicable *by default*:
       - `o-`: Objects. Used for globally applicable elements and complex blocks. Should be purely structural with no aesthetic style properties (normalising properties are exception) Examples include `o-gridbox__list` and `o-swipe__list`
-      - `ic-`: Icons. Used to apply HipVan symbols (as a pseudo-element). All HipVan symbols should be applied from the predefined list of `ic-` prefixed classes @.
+      - `ic-`: Icons. Used to apply symbols (as a pseudo-element). All symbols should be applied from the predefined list of `ic-` prefixed classes @.
       - `u-`: Utility. Single-purpose class that applies important but isolated propert(ies) to an element
-      - `hk-`: Hack. Write only into `../override_hipvan/shame.scss`. Used for single-purpose & isolated tricks, cheats, magic numbers, etc. Should be returned to and removed once a proper solution is found
+      - `hk-`: Hack. Write only into `../override/shame.scss`. Used for single-purpose & isolated tricks, cheats, magic numbers, etc. Should be returned to and removed once a proper solution is found
 
   - Component-specific *by default*:
       - `js-`: Javscript-binding. Used only by scripts. Should be made globally-applicable if requested for CMS content usage
@@ -96,12 +96,12 @@ Broadly speaking, there are 2 categories of namespaces.
 ## **2. Symbols**
 
 - A continuously updated symbols font is being maintained in LLQ at: `../assets/fonts`
-- All currently available symbols for use can be looked up at: [/symbols-reference](https://www.hipvan.com/symbols-reference)
+- All currently available symbols for use can be looked up at: [/symbols-reference]
 
 ### **2.1 Usage**
 
 - Symbols are applied as CSS pseudo-element content
-- `.ic-bef` _(applied to :before)_ or `.ic-aft` _(applied to :after)_ declares the `HipVanSymbols` font-family property
+- `.ic-bef` _(applied to :before)_ or `.ic-aft` _(applied to :after)_ declares the Symbols` font-family property
 - Symbol styling can be applied quickly through the `font_icon` series of mixins available from `../abstracts/hv-mixins.scss`
 - Where applicable, symbol variants can be shown by adding modifier classes:
 
